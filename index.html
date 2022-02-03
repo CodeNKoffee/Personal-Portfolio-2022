@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+  <title>Hatem Soliman</title>
+</head>
+<body>
+  <section id="home-section">
+    <img id="home-bg" src="./Assets/polygon-scatter.svg" alt="">
+    <div class="container">
+      <div id="progress__bar">
+        <i class="far fa-circle"></i>
+        <i class="far fa-circle"></i>
+        <i class="far fa-circle"></i>
+        <i class="far fa-circle"></i>
+      </div>
+      <div class="row">
+        <nav>
+          <figure>
+            <img id="personal-logo" src="./Assets/logo.svg" alt="Logo">
+            <img id="personal-logo-sm" src="./Assets/small-logo.svg" alt="Small Logo">
+          </figure>
+          <ul class="nav__link--list">
+            <li class="nav__link">
+              <a href="#home-section" class="
+                nav__link--anchor
+              ">Home</a>
+            </li>
+            <li class="nav__link">
+              <a href="#about-section" class="
+                nav__link--anchor
+              ">About</a>
+            </li>
+            <li class="nav__link">
+              <a href="#projects-section" class="
+                nav__link--anchor
+              ">Projects</a>
+            </li>
+            <li class="nav__link nav__link--special">
+              <a href="#contact-section" class="
+                nav__link--anchor nav__link--anchor--special
+              ">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__container--mobile">
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a class="menu__link" onclick="closeMenu()">ABOUT</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#explore" class="menu__link" onclick="closeMenu()">EXPLORE</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#journal" class="menu__link" onclick="closeMenu()">JOURNAL</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" onclick="closeMenu()">SEARCH</a>
+                </li>
+              </ul>
+            </div>
+          </div> 
+        </nav>
+
+        <header>
+          <div class="header__content">
+            <h1 class="header__title">Redefining the web <span class="blue">experience</span></h1>
+            <button class="header__btn">
+              <a class="header__btn--anchor" href="#about-section">ABOUT ME</a>
+            </button>
+          </div>
+          <figure class="header__img--wrapper">
+            <img id="header__img" src="./Assets/unmasked-identity.png" alt="">
+          </figure>
+        </header>
+      </div>
+      <ul class="imp__link--list">
+        <li class="imp__link--wrapper">
+          <a href="https://www.linkedin.com/in/hatem-soliman-097872187/" target="_blank">
+            <i class="fab fa-linkedin-in imp__link--anchor"></i>
+          </a>
+        </li>
+        <li class="imp__link--wrapper">
+          <a href="https://github.com/CodeNKoffee" target="_blank">
+            <i class="fab fa-github imp__link--anchor"></i>
+          </a>
+        </li>
+        <li class="imp__link--wrapper">
+          <a href="https://dribbble.com/solifuse" target="_blank">
+            <i class="fab fa-behance imp__link--anchor"></i>
+          </a>
+        </li>
+        <li class="imp__link--wrapper">
+          <a href="" target="_blank">
+            <i class="fas fa-file-pdf imp__link--anchor"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="wave-wrapper">
+    <img class="waves" src="./Assets/layered-waves-2-success.svg" alt="waves">
+  </div>
+
+  <section id="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="myself">
+          <h1 class="myself__title">I'm <span class="blue">Hatem</span>&nbsp;<span class="hand-wave">👋</span></h1>
+          <p class="myself__para">
+            I'm a <span class="blue">frontend software engineer</span> with a strong passion for building responsive and performant web applications with great user experiences that positively impact the world. Using my <span class="blue">graphic design</span> and <span class="blue">web development</span> skills combined, I can create an appealing <span class="blue">UI</span> that promotes the communication of ideas to your audience.
+          </p>
+          <figure class="myself__img--wrapper">
+            <img src="./Assets/about me.svg" alt="About Me" id="myself__img">
+          </figure>
+        </div>
+        <div class="tech-stack">
+          <div class="stack__title">This is my <span class="blue">technology stack</span></div>
+          <div class="language__list">
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML Logo" class="language__img">
+              </figure>
+              <span class="language__name">HTML</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo" class="language__img">
+              </figure>
+              <span class="language__name">CSS</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo" class="language__img">
+              </figure>
+              <span class="language__name">JavaScript</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png" alt="Git Logo" class="language__img">
+              </figure>
+              <span class="language__name">Git</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://markdown-here.com/img/icon256.png" alt="Markdown Logo" class="language__img">
+              </figure>
+              <span class="language__name">Markdown</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png" alt="SASS Logo" class="language__img">
+              </figure>
+              <span class="language__name">Sass</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://gooova.com/wp-content/uploads/2021/04/lrc-21-600x600.png" alt="LrC Logo" class="language__img">
+              </figure>
+              <span class="language__name">Lightroom</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://www.freelogovectors.net/wp-content/uploads/2021/09/adobe-photoshop-logo-freelogovectors.net_.png" alt="Photoshop" class="language__img">
+              </figure>
+              <span class="language__name">Photoshop</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/figma-1-logo.png" alt="Figma Logo" class="language__img">
+              </figure>
+              <span class="language__name">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <img src="./Assets/layered-waves-2-flipped.svg" alt="waves" class="waves">
+
+  <section id="projects-section">
+    <div class="container">
+      <div class="row">
+        <h1 class="projects__title">Here are some of my <span class="blue">projects</span></h1>
+        <ul class="honeycomb">
+          <li class="honeycomb-cell">
+              <img class="honeycomb-cell_img" src="./Assets/projects.jpg">
+              <div class="honeycomb-cell_title">Brochure</div>
+          </li>
+          <li class="honeycomb-cell">
+              <img class="honeycomb-cell_img" src="./Assets/projects.jpg">
+              <div class="honeycomb-cell_title">CRUD/API</div>
+          </li>
+          <li class="honeycomb-cell">
+              <img class="honeycomb-cell_img" src="./Assets/projects.jpg">
+              <div class="honeycomb-cell_title">Landing Page</div>
+          </li>
+          <li class="honeycomb-cell honeycomb_hidden">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <div class="wave-wrapper">
+    <img class="waves" src="./Assets/layered-waves-2-success.svg" alt="waves">
+  </div>
+
+  <section id="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="contact__header">
+          <div class="contact__title--wrapper">
+            <div class="contact__centrer"></div>
+            <h1 class="contact__title">Hire <span class="blue">Me</span></h1>
+            <figure class="contact__img--contract--wrapper">
+              <img src="./Assets/contract.svg" alt="Contract" id="contact__img--contract">
+            </figure>
+          </div>
+          <p class="contact__para">
+            Feel free to contact me at any time, through any method below.
+          </p>
+          <div class="contact__block">
+            <figure class="contact__img--contact--wrapper">
+              <img src="./Assets/contact.svg" alt="Contact Me" id="contact__img--contact">
+            </figure>
+            <div class="contact__centrer--two"></div>
+          </div>
+        </div>
+        <div class="contact__methods">
+          <form id="contact__form" action="https://formsubmit.co/hatemthedev@gmail.com" method="POST">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="contact__socials">
+            <div class="contact__links">
+              <h3 class="contact__mail">
+                <a id="contact__mail--anchor" href="mailto:hatemthedev@gmail.com" target="_blank">
+                  hatemthedev@gmail.com
+                </a>
+              </h3>
+              <ul class="social__link--list">
+                <li class="social__link">
+                  <a class="social__link--anchor" href="https://twitter.com/iamsolifuse">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="social__link">
+                  <a class="social__link--anchor" href="https://www.tiktok.com/@codenkoffee">
+                    <i class="fab fa-tiktok"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <figure class="contact__img--agreement--wrapper">
+              <img src="./Assets/agreement.svg" alt="Agreement" id="contact__img--agreement">
+            </figure>
+          </div>
+          <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(419.5919098635898 346.4461440853622)">
+              <path id="blob-1" d="M4.6 -57.8C9.2 -5.3 18.5 -10.7 81 -10.7C143.5 -10.7 259.2 -5.3 291 18.3C322.7 42 270.5 84 222.9 109.8C175.3 135.7 132.4 145.3 96 137.2C59.7 129 29.8 103 -7.2 115.4C-44.2 127.8 -88.3 178.7 -137.8 194.4C-187.3 210.2 -242.2 190.8 -239.8 152.6C-237.4 114.3 -177.7 57.2 -155.3 12.9C-132.9 -31.3 -147.9 -62.7 -154.5 -108.3C-161.2 -153.9 -159.6 -213.8 -132.5 -253.3C-105.3 -292.8 -52.7 -311.9 -26.3 -266.3C0 -220.7 0 -110.3 4.6 -57.8" fill="#27bbc1"></path>
+            </g>
+            <g class="blobs" transform="translate(500.2373891646196 256.03556354588545)">
+              <path id="blob-2" d="M67.4 -98.5C107.1 -93.8 172.6 -115.6 187.4 -103.6C202.1 -91.7 166.1 -45.8 161.4 -2.7C156.8 40.5 183.6 81 193.2 135.1C202.8 189.3 195.1 257 160.1 262.4C125 267.8 62.5 210.9 3.3 205.3C-56 199.7 -112 245.3 -112 219.7C-112 194 -56 97 -89 48.5C-122 0 -244 0 -282.7 -22.3C-321.4 -44.7 -276.7 -89.3 -233.5 -120.1C-190.2 -150.8 -148.4 -167.6 -109.7 -173C-71 -178.3 -35.5 -172.2 -10.8 -153.4C13.8 -134.6 27.7 -103.3 67.4 -98.5" fill="#27bbc1"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const tween = KUTE.fromTo(
+        '#blob-1',
+        { path: '#blob-1' },
+        { path: '#blob-2' },
+        { repeat: 999, duration: 3000, yoyo: true }
+      )
+
+      tween.start()
+    </script>
+  </section>
+
+  <img src="./Assets/layered-waves-2-flipped.svg" alt="waves" class="waves">
+
+  <footer>
+    <div class="container footer__container">
+      <span class="copyright">Copyright © 2022, Hatem Soliman<br>All Rights Reserved</span>
+      <figure class="footer__logo--wrapper">
+        <img id="footer__logo" src="./Assets/small-logo.svg" alt="Hatem Soliman">
+      </figure>
+      <figure class="footer__img--wrapper">
+        <img id="footer__img" src="./Assets/code-thinking.svg" alt="Code Thinking">
+      </figure>
+  </div>
+  </footer>
+  
+</body>
+</html>
