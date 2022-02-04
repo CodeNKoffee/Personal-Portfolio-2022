@@ -31,4 +31,3 @@ const linkObserver = new IntersectionObserver(linkObserverCallback, linkObserver
 
 linkObserver.observe(sections);
 
-
