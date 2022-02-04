@@ -1,9 +1,3 @@
-//VARIABLES
-
-
-//EVENT LISTENERS
-
-
 //FUNCTIONS
 //Navigation Bar & Hamburger
 function openMenu(){
