@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <script src="script.js"></script>
+  <script defer src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
@@ -63,16 +63,16 @@
               </button>
               <ul class="menu__links">
                 <li class="menu__list">
-                  <a class="menu__link" onclick="closeMenu()">ABOUT</a>
+                  <a href="#home-section" class="menu__link" onclick="closeMenu()">HOME</a>
                 </li>
                 <li class="menu__list">
-                  <a href="#explore" class="menu__link" onclick="closeMenu()">EXPLORE</a>
+                  <a href="#about-section" class="menu__link" onclick="closeMenu()">ABOUT</a>
                 </li>
                 <li class="menu__list">
-                  <a href="#journal" class="menu__link" onclick="closeMenu()">JOURNAL</a>
+                  <a href="#projects-section" class="menu__link" onclick="closeMenu()">PROJECTS</a>
                 </li>
                 <li class="menu__list">
-                  <a class="menu__link" onclick="closeMenu()">SEARCH</a>
+                  <a href="#contact-section" class="menu__link" onclick="closeMenu()">CONTACT</a>
                 </li>
               </ul>
             </div>
@@ -120,7 +120,7 @@
     <img class="waves" src="./Assets/layered-waves-2-success.svg" alt="waves">
   </div>
 
-  <section id="about-section">
+  <section id="about-section" class="white-sections">
     <div class="container">
       <div class="row">
         <div class="myself">
@@ -227,7 +227,7 @@
     <img class="waves" src="./Assets/layered-waves-2-success.svg" alt="waves">
   </div>
 
-  <section id="contact-section">
+  <section id="contact-section" class="white-sections">
     <div class="container">
       <div class="row">
         <div class="contact__header">
@@ -319,9 +319,11 @@
   <footer>
     <div class="container footer__container">
       <span class="copyright">Copyright © 2022, Hatem Soliman<br>All Rights Reserved</span>
-      <figure class="footer__logo--wrapper">
-        <img id="footer__logo" src="./Assets/small-logo.svg" alt="Hatem Soliman">
-      </figure>
+      <a class="footer__logo--anchor" href="#home-section">
+        <figure class="footer__logo--wrapper">
+          <img id="footer__logo" src="./Assets/small-logo.svg" alt="Hatem Soliman" onclick="toHome()">
+        </figure>
+      </a>
       <figure class="footer__img--wrapper">
         <img id="footer__img" src="./Assets/code-thinking.svg" alt="Code Thinking">
       </figure>

@@ -188,6 +188,14 @@ button {
   color: var(--wintertusk-white);
 }
 
+.dark-theme {
+  color: var(--celestial-black);
+  border: 2px solid #1d1d1d;
+  border-radius: 50%;
+  padding: 8px;
+  transition: all 300ms ease;
+}
+
 .imp__link--anchor {
   border: 2px solid #fff;
   border-radius: 50%;
@@ -358,6 +366,7 @@ nav {
   color: var(--northguard-blue);
   font-weight: bold;
   font-size: 40px;
+  transition: all 300ms ease;
 }
 
 .menu__link:hover {
@@ -945,14 +954,18 @@ footer {
   padding-left: 32px;
 }
 
-.copyright, .footer__logo--wrapper, .footer__img--wrapper {
+.copyright, .footer__logo--anchor, .footer__img--wrapper {
   width: calc(100% / 3);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
+.footer__logo--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 #footer__logo, #footer__img {
   width: 50%;
