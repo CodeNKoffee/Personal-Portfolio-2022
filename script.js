@@ -27,6 +27,7 @@ const linkObserverOptions = {
   threshold: 0
 }
 
+
 const linkObserver = new IntersectionObserver(linkObserverCallback, linkObserverOptions);
 
 linkObserver.observe(sections);
