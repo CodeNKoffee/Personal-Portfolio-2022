@@ -223,6 +223,17 @@ button {
   width: 100%;
 }
 
+.card {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 300ms;
+}
+
+.card .show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 
 /*
 

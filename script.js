@@ -31,3 +31,66 @@ const linkObserver = new IntersectionObserver(linkObserverCallback, linkObserver
 
 linkObserver.observe(sections);
 
+
+
+
+
+
+
+
+// card section
+
+const cards = document.querySelectorAll('.card');
+
+// card callback function
+const cardObserverCallback = (cardsToWatch, cardObserver) => {
+  cardsToWatch.forEach(cardToWatch => {
+    if(cardToWatch.isIntersecting) {
+      cardToWatch.target.classList.add('fade');
+      cardObserver.unobserve(cardToWatch.target);
+    }
+  })
+}
+
+//card options
+const cardObserverOptions = {
+  threshold: .5
+}
+
+//card observer
+
+const cardObserver = new IntersectionObserver(cardObserverCallback, cardObserverOptions);
+
+//card observer on cards
+cards.forEach(card => {
+  cardObserver.observe(card);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Progress Bar
+function updateList() {
+	const titles = [...document.querySelectorAll('section, i')].sort((a, b) => {
+		return Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().top);
+	});
+
+	document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove("selected-circle"));
+	
+	document.querySelectorAll(".nav-dot")[[...document.querySelectorAll('section, i')].indexOf(titles[0])].classList.add("selected-circle");
+}
+
+updateList();
+window.addEventListener('scroll', () => {
+    updateList();
+})
+
