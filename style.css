@@ -223,17 +223,6 @@ button {
   width: 100%;
 }
 
-.card {
-  transform: translateY(100px);
-  opacity: 0;
-  transition: 300ms;
-}
-
-.card .show {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 
 /*
 
@@ -430,6 +419,7 @@ header {
 
 .header__btn--anchor {
   color: var(--wintertusk-white);
+  transition: all 300ms ease;
 }
 
 .header__btn:hover {
