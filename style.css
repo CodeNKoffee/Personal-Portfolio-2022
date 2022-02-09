@@ -5,6 +5,7 @@
   --northguard-blue: #27bbc1;
   --wintertusk-white: #fff;
   --avalon-grey: #d7d7d7;
+  --oath-grey: #9c9c9c;
 }
 
 /*
@@ -184,8 +185,12 @@ button {
   margin-left: 1200px;
 }
 
-.side-nav-bar, .imp__link--anchor {
-  color: var(--avalon-grey);
+.imp__link--anchor {
+  color: var(--wintertusk-white);
+}
+
+.side-nav-bar {
+  color: var(--oath-grey);
 }
 
 .current-circle {
