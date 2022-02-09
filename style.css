@@ -988,6 +988,18 @@ footer {
 RESPONSIVENESS
 
 */
+
+/* Medium-Sized Laptops */
+@media(max-width: 1024px) {
+  #progress__bar {
+    margin-right: 90%;
+  }
+  
+  .imp__link--list {
+    margin-left: 90%;
+  }
+}
+
 /* Tablets & large smartphones */
 body {
   overflow-x: hidden;
