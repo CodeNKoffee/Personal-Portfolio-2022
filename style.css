@@ -417,13 +417,13 @@ header {
   transition: all 300ms ease;
 }
 
+.header__btn:hover {
+  border: 4px solid #27bbc1;
+}
+
 .header__btn--anchor {
   color: var(--wintertusk-white);
   transition: all 300ms ease;
-}
-
-.header__btn:hover {
-  border: 4px solid #27bbc1;
 }
 
 .header__btn--anchor:hover {
