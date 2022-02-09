@@ -227,3 +227,112 @@ const linkObserverFourth = new IntersectionObserver(linkObserverCallbackFourth, 
 linkObserverFourth.observe(sectionsFourth);
 
 
+
+
+
+
+
+
+//Side Navigation Bar changing Colour According to Current Section
+//HOME CIRCLE
+const circleLinkOne = document.querySelector('.circle1');
+const homeSection = document.getElementById('home-section');
+
+
+const circleLinkObserverCallbackOne = (watchEntry, circleLinkObserverOne) => {
+  if(watchEntry[0].isIntersecting) {
+    circleLinkOne.classList.remove('side-nav-bar');
+    circleLinkOne.classList.add('current-circle')
+  } else {
+    circleLinkOne.classList.remove('current-circle');
+    circleLinkOne.classList.add('side-nav-bar');
+  }
+}
+
+const circleLinkObserverOptionsOne = {
+  rootMargin: '-110px',
+  threshold: 0
+}
+
+
+const circleLinkObserverOne = new IntersectionObserver(circleLinkObserverCallbackOne, circleLinkObserverOptionsOne);
+
+circleLinkObserverOne.observe(homeSection);
+
+
+//ABOUT CIRCLE
+const circleLinkTwo = document.querySelector('.circle2');
+const aboutSection = document.getElementById('about-section');
+
+
+const circleLinkObserverCallbackTwo = (watchEntry, circleLinkObserverTwo) => {
+  if(watchEntry[0].isIntersecting) {
+    circleLinkTwo.classList.remove('side-nav-bar');
+    circleLinkTwo.classList.add('current-circle')
+  } else {
+    circleLinkTwo.classList.remove('current-circle');
+    circleLinkTwo.classList.add('side-nav-bar');
+  }
+}
+
+const circleLinkObserverOptionsTwo = {
+  rootMargin: '-110px',
+  threshold: 0
+}
+
+
+const circleLinkObserverTwo = new IntersectionObserver(circleLinkObserverCallbackTwo, circleLinkObserverOptionsTwo);
+
+circleLinkObserverTwo.observe(aboutSection);
+
+
+//PROJECTS CIRCLE
+const circleLinkThree = document.querySelector('.circle3');
+const projectsSection = document.getElementById('projects-section');
+
+
+const circleLinkObserverCallbackThree = (watchEntry, circleLinkObserverThree) => {
+  if(watchEntry[0].isIntersecting) {
+    circleLinkThree.classList.remove('side-nav-bar');
+    circleLinkThree.classList.add('current-circle')
+  } else {
+    circleLinkThree.classList.remove('current-circle');
+    circleLinkThree.classList.add('side-nav-bar');
+  }
+}
+
+const circleLinkObserverOptionsThree = {
+  rootMargin: '-110px',
+  threshold: 0
+}
+
+
+const circleLinkObserverThree = new IntersectionObserver(circleLinkObserverCallbackThree, circleLinkObserverOptionsThree);
+
+circleLinkObserverThree.observe(projectsSection);
+
+
+//CONTACT CIRCLE
+const circleLinkFour = document.querySelector('.circle4');
+const contactSection = document.getElementById('contact-section');
+
+
+const circleLinkObserverCallbackFour = (watchEntry, circleLinkObserverFour) => {
+  if(watchEntry[0].isIntersecting) {
+    circleLinkFour.classList.remove('side-nav-bar');
+    circleLinkFour.classList.add('current-circle')
+  } else {
+    circleLinkFour.classList.remove('current-circle');
+    circleLinkFour.classList.add('side-nav-bar');
+  }
+}
+
+const circleLinkObserverOptionsFour = {
+  rootMargin: '-110px',
+  threshold: 0
+}
+
+
+const circleLinkObserverFour = new IntersectionObserver(circleLinkObserverCallbackFour, circleLinkObserverOptionsFour);
+
+circleLinkObserverFour.observe(contactSection);
