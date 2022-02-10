@@ -478,6 +478,7 @@ ABOUT SECTION
   font-size: 48px;
   font-weight: 900;
   color: var(--celestial-black);
+  text-align: center;
   margin-top: 48px;
 }
 
@@ -988,6 +989,25 @@ footer {
 RESPONSIVENESS
 
 */
+/* 4K Displays */
+@media(max-width: 3180px) {
+  #home-section {
+    margin-bottom: 256px;
+    padding: 56px 0;
+  }
+
+  header {
+    margin-top: 72px;
+  }
+
+  #progress__bar, .imp__link--list {
+    margin-top: 256px;
+  }
+
+  #projects-section {
+    margin: 128px 0 256px 0;
+  }
+}
 
 /* Medium-Sized Laptops */
 @media(max-width: 1024px) {
@@ -1096,6 +1116,7 @@ body {
   }
 
   header {
+    margin-top: 72px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -1117,6 +1138,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .header__btn {
+    margin-bottom: 160px;
   }
 
   .stack__title {
