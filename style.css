@@ -706,6 +706,7 @@ PROJECTS
 .honeycomb-cell:hover
 .honeycomb-cell_img {
   filter: grayscale(0%);
+  filter: blur(2px);
 }
 
 .honeycomb-cell:hover::before {
@@ -722,6 +723,60 @@ PROJECTS
   width: 250px;
   margin: 0 12.5px;
 }
+
+.honeycomb-cell:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.project__description {
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  transform: translateY(100%);
+  max-width: 550px;
+  padding: 2px;
+  z-index: 3;
+  opacity: 0;
+  transition: transform 450ms, opacity 300ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__description--title {
+  font-size: 24px;
+  font-weight: 900;
+}
+.project__description--sub-title {
+  font-weight: 800;
+}
+
+.project__description--para {
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.project__description--link {
+  font-size: 20px;
+  margin-right: 8px;
+  transition: all 300ms ease;
+}
+
+.project__description--link:hover {
+  color: var(--northguard-blue);
+}
+
+.project__description--title,
+.project__description--sub-title,
+.project__description--para,
+.project__description--link {
+  text-align: center;
+  color: var(--celestial-white);
+  text-shadow: 0.5px 0.5px #000;
+}
+
 
 
 /*
