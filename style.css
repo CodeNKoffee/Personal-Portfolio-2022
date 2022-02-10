@@ -992,7 +992,7 @@ RESPONSIVENESS
 /* 4K Displays */
 @media(max-width: 3180px) {
   #home-section {
-    margin-bottom: 256px;
+    margin-bottom: 224px;
     padding: 56px 0;
   }
 
@@ -1116,7 +1116,7 @@ body {
   }
 
   header {
-    margin-top: 72px;
+    margin-top: 56px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
