@@ -1049,24 +1049,12 @@ RESPONSIVENESS
 
 */
 /* 4K Displays */
-@media(max-width: 3180px) {
+@media(max-width: 4096px) {
   #home-section {
-    margin-bottom: 256px;
+    margin-bottom: 64px;
     padding: 56px 0;
   }
-
-  header {
-    margin-top: 72px;
-  }
-
-  #progress__bar, .imp__link--list {
-    margin-top: 256px;
-  }
-
-  #projects-section {
-    margin: 128px 0 256px 0;
-  }
-}
+} 
 
 /* Medium-Sized Laptops */
 @media(max-width: 1024px) {
