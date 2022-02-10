@@ -706,7 +706,7 @@ PROJECTS
 .honeycomb-cell:hover
 .honeycomb-cell_img {
   filter: grayscale(0%);
-  filter: blur(2px);
+  filter: blur(8px);
 }
 
 .honeycomb-cell:hover::before {
@@ -732,7 +732,7 @@ PROJECTS
 .project__description {
   position: absolute;
   top: 55%;
-  left: 2%;
+  left: 1%;
   transform: translateY(100%);
   max-width: 550px;
   padding: 2px;
@@ -743,6 +743,10 @@ PROJECTS
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.project__description--middle {
+  left: 12%;
 }
 
 .project__description--title {
@@ -773,8 +777,8 @@ PROJECTS
 .project__description--para,
 .project__description--link {
   text-align: center;
-  color: var(--celestial-white);
-  text-shadow: 0.5px 0.5px #000;
+  color: var(--celestial-black);
+  text-shadow: 1px 1px #fff;
 }
 
 
