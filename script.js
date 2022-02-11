@@ -14,6 +14,21 @@ function closeMenu(){
 
 
 
+//Portfolio Modal
+const portfolioModal = document.getElementById("portfolio__modal");
+
+
+const detailsAnchor = document.getElementById("details-anchor").addEventListener("click", () => {
+  portfolioModal.style.display = "block";
+});
+
+
+
+
+
+
+
+
 
 //Change Important Links Colour depending on Background Colour
 //FOR FIRST WHITE SECTION

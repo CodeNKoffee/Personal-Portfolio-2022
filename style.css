@@ -147,6 +147,11 @@ button {
   cursor: pointer;
 }
 
+hr {
+  color: var(--wintertusk-white);
+  outline: none;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -282,6 +287,50 @@ nav {
 
 .nav__link {
   padding: 0 16px;
+}
+
+.portfolio__modal {
+  display: none;
+  position: absolute;
+  top: 100px;
+  background-color: #27bcc1e8;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 16px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio__modal--title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--avalon-grey);
+  margin-bottom: 8px;
+}
+
+.portfolio__modal--sub-title {
+  font-weight: 700;
+  color: var(--wintertusk-white);
+  margin-bottom: 16px;
+}
+
+.portfolio__modal--para {
+  font-weight: 500;
+  margin: 8px 0 24px 0;
+  padding: 0 16px;
+}
+
+.portfolio__modal--link {
+  font-size: 24px;
+  color: var(--wintertusk-white);
+  margin-left: 8px;
+  transition: all 300ms ease;
+}
+
+.portfolio__modal--link:hover {
+  color: var(--celestial-black);
 }
 
 
