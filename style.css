@@ -732,7 +732,7 @@ PROJECTS
 .project__description {
   position: absolute;
   top: 55%;
-  left: 1%;
+  left: 2%;
   transform: translateY(100%);
   max-width: 550px;
   padding: 2px;
@@ -746,7 +746,7 @@ PROJECTS
 }
 
 .project__description--middle {
-  left: 12%;
+  left: 4%;
 }
 
 .project__description--title {
@@ -760,6 +760,7 @@ PROJECTS
 .project__description--para {
   font-weight: 600;
   margin: 16px 0;
+  max-width: 25ch;
 }
 
 .project__description--link {
@@ -1049,10 +1050,10 @@ RESPONSIVENESS
 
 */
 /* 4K Displays */
-@media(max-width: 4096px) {
+@media(max-width: 2160px) {
   #home-section {
     margin-bottom: 64px;
-    padding: 56px 0;
+    padding: 16px 0;
   }
 } 
 
