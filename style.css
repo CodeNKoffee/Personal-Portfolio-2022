@@ -147,11 +147,6 @@ button {
   cursor: pointer;
 }
 
-hr {
-  color: var(--wintertusk-white);
-  outline: none;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -163,7 +158,9 @@ hr {
 
 .row {
   width: 86%;
+  margin: 0 auto;
   padding: 0 12px;
+
 }
 
 .blue {
@@ -321,7 +318,7 @@ nav {
   padding: 0 16px;
 }
 
-.portfolio__modal--link, .portfolio__modal--link--mobile {
+.portfolio__modal--link {
   font-size: 24px;
   color: var(--wintertusk-white);
   margin-left: 8px;
@@ -338,6 +335,12 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.portfolio__modal--link--mobile {
+  font-size: 24px;
+  color: var(--wintertusk-white);
+  transition: all 300ms ease;
 }
 
 .portfolio__modal--link--mobile:hover {
@@ -844,6 +847,7 @@ PROJECTS
   color: var(--celestial-black);
   text-shadow: 1px 1px #fff;
 }
+
 
 
 
