@@ -1,4 +1,12 @@
 //FUNCTIONS
+
+
+
+
+
+
+
+
 //Navigation Bar & Hamburger
 function openMenu(){
   document.body.classList += " menu--open"
@@ -16,11 +24,17 @@ function closeMenu(){
 
 //Portfolio Modal
 const portfolioModal = document.getElementById("portfolio__modal");
+const detailsAnchor = document.getElementById("details-anchor");
 
+portfolioModal.style.display = "none";
 
-const detailsAnchor = document.getElementById("details-anchor").addEventListener("click", () => {
+detailsAnchor.addEventListener("mouseover", () => {
   portfolioModal.style.display = "block";
-});
+})
+
+portfolioModal.addEventListener("mouseleave", () => {
+  portfolioModal.style.display = "none";
+})
 
 
 
