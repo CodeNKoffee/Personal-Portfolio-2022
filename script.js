@@ -23,6 +23,7 @@ function closeMenu(){
 
 
 //Portfolio Modal
+//Desktop
 const portfolioModal = document.getElementById("portfolio__modal");
 const detailsAnchor = document.getElementById("details-anchor");
 
@@ -35,7 +36,6 @@ detailsAnchor.addEventListener("mouseover", () => {
 portfolioModal.addEventListener("mouseleave", () => {
   portfolioModal.style.display = "none";
 })
-
 
 
 

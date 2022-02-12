@@ -321,7 +321,7 @@ nav {
   padding: 0 16px;
 }
 
-.portfolio__modal--link {
+.portfolio__modal--link, .portfolio__modal--link--mobile {
   font-size: 24px;
   color: var(--wintertusk-white);
   margin-left: 8px;
@@ -330,6 +330,18 @@ nav {
 
 .portfolio__modal--link:hover {
   color: var(--celestial-black);
+}
+
+.portfolio__modal--mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__modal--link--mobile:hover {
+  color: var(--northguard-blue);
 }
 
 .nav__link--special {
@@ -416,6 +428,10 @@ nav {
 
 .menu__list {
   padding: 32px 0;
+}
+
+.menu__list:nth-child(4) {
+  padding-bottom: 56px;
 }
 
 .menu__link {
