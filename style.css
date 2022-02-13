@@ -158,7 +158,9 @@ button {
 
 .row {
   width: 86%;
+  margin: 0 auto;
   padding: 0 12px;
+
 }
 
 .blue {
@@ -284,6 +286,66 @@ nav {
   padding: 0 16px;
 }
 
+.portfolio__modal {
+  position: absolute;
+  top: 100px;
+  background-color: #27bcc1e8;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 16px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio__modal--title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--avalon-grey);
+  margin-bottom: 8px;
+}
+
+.portfolio__modal--sub-title {
+  font-weight: 700;
+  color: var(--wintertusk-white);
+  margin-bottom: 16px;
+}
+
+.portfolio__modal--para {
+  font-weight: 500;
+  margin: 8px 0 24px 0;
+  padding: 0 16px;
+}
+
+.portfolio__modal--link {
+  font-size: 24px;
+  color: var(--wintertusk-white);
+  margin-left: 8px;
+  transition: all 300ms ease;
+}
+
+.portfolio__modal--link:hover {
+  color: var(--celestial-black);
+}
+
+.portfolio__modal--mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__modal--link--mobile {
+  font-size: 24px;
+  color: var(--wintertusk-white);
+  transition: all 300ms ease;
+}
+
+.portfolio__modal--link--mobile:hover {
+  color: var(--northguard-blue);
+}
 
 .nav__link--special {
   border: 2px solid #27bbc1;
@@ -369,6 +431,10 @@ nav {
 
 .menu__list {
   padding: 32px 0;
+}
+
+.menu__list:nth-child(4) {
+  padding-bottom: 56px;
 }
 
 .menu__link {
@@ -706,6 +772,7 @@ PROJECTS
 .honeycomb-cell:hover
 .honeycomb-cell_img {
   filter: grayscale(0%);
+  filter: blur(8px);
 }
 
 .honeycomb-cell:hover::before {
@@ -722,6 +789,66 @@ PROJECTS
   width: 250px;
   margin: 0 12.5px;
 }
+
+.honeycomb-cell:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.project__description {
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  transform: translateY(100%);
+  max-width: 550px;
+  padding: 2px;
+  z-index: 3;
+  opacity: 0;
+  transition: transform 450ms, opacity 300ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__description--middle {
+  left: 4%;
+}
+
+.project__description--title {
+  font-size: 24px;
+  font-weight: 900;
+}
+.project__description--sub-title {
+  font-weight: 800;
+}
+
+.project__description--para {
+  font-weight: 600;
+  margin: 16px 0;
+  max-width: 25ch;
+}
+
+.project__description--link {
+  font-size: 20px;
+  margin-right: 8px;
+  transition: all 300ms ease;
+}
+
+.project__description--link:hover {
+  color: var(--northguard-blue);
+}
+
+.project__description--title,
+.project__description--sub-title,
+.project__description--para,
+.project__description--link {
+  text-align: center;
+  color: var(--celestial-black);
+  text-shadow: 1px 1px #fff;
+}
+
+
 
 
 /*
@@ -990,24 +1117,12 @@ RESPONSIVENESS
 
 */
 /* 4K Displays */
-@media(max-width: 3180px) {
+@media(max-width: 2160px) {
   #home-section {
-    margin-bottom: 224px;
-    padding: 56px 0;
+    margin-bottom: 64px;
+    padding: 16px 0;
   }
-
-  header {
-    margin-top: 72px;
-  }
-
-  #progress__bar, .imp__link--list {
-    margin-top: 256px;
-  }
-
-  #projects-section {
-    margin: 128px 0 256px 0;
-  }
-}
+} 
 
 /* Medium-Sized Laptops */
 @media(max-width: 1024px) {
