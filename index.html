@@ -334,18 +334,21 @@
           </div>
         </div>
         <div class="contact__methods">
-          <form id="contact__form" action="https://formsubmit.co/hatemthedev@gmail.com" method="POST">
+          <form name="contact" id="contact__form" action="POST" data-netlify="true">
             <div class="form__item">
               <label class="form__item--label">Name</label>
-              <input class="input" name="user_name" type="text" required></input>
+              <input class="input" name="name" type="text" required/>
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input class="input" name="user_email" type="email" required></input>
+              <input class="input" name="email" type="email" required/>
             </div>
             <div class="form__item">
               <label class="form__item--label">Message</label>
               <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <div class="form__item">
+              <div data-netlify-recaptcha></div>
             </div>
             <button id="contact__submit" class="form__submit">
               Send it my way
