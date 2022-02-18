@@ -181,10 +181,12 @@ button {
 
 #progress__bar {
   margin-right: 1200px;
+  z-index: 100;
 }
 
 .imp__link--list {
   margin-left: 1200px;
+  z-index: 100;
 }
 
 .imp__link--anchor {
