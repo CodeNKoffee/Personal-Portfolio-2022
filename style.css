@@ -260,16 +260,17 @@ HOME SECTION
 
 */
 #home-section {
+  position: relative;
   z-index: 0;
   display: flex;
   justify-content: center;
 }
 
-/* #particles-js {
-  width: 100%;
-  height: 100vh;
-  z-index: 100;
-} */
+#particles-js {
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+}  
 
 #home-bg {
   position: absolute;
