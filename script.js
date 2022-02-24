@@ -1,12 +1,4 @@
 //FUNCTIONS
-
-
-
-
-
-
-
-
 //Navigation Bar & Hamburger
 function openMenu(){
   document.body.classList += " menu--open"
@@ -15,6 +7,7 @@ function openMenu(){
 function closeMenu(){
   document.body.classList.remove('menu--open')
 }
+
 
 
 
@@ -37,6 +30,39 @@ portfolioModal.addEventListener("mouseleave", () => {
   portfolioModal.style.display = "none";
 })
 
+
+
+
+
+
+
+//Header Text Animation
+// const headerText = document.querySelector(".header__title");
+// const strText = headerText.textContent;
+// const splitText = strText.split("");
+// headerText.textContent = "";
+
+// for (let i = 0; i < splitText.length; i++) {
+//   headerText.innerHTML += "<span>" + splitText[i] + "</span>";
+// }
+
+// let char = 0;
+// let timer = setInterval(onTick, 50);
+
+// function onTick() {
+//   const span = headerText.querySelectorAll("span")[char];
+//   span.classList.add("fade");
+//   char++
+//   if (char == splitText.length) {
+//     complete();
+//     return;
+//   }
+// }
+
+// function complete() {
+//   clearInterval(timer);
+//   timer = null;
+// }
 
 
 
