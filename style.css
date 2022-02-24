@@ -160,7 +160,15 @@ button {
   width: 86%;
   margin: 0 auto;
   padding: 0 12px;
+}
 
+.text::selection {
+  background-color: var(--oath-grey);
+}
+
+.text-reverse::selection {
+  background-color: var(--northguard-blue);
+  color: var(--avalon-grey);
 }
 
 .blue {

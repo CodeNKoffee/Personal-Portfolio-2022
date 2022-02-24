@@ -36,39 +36,6 @@ portfolioModal.addEventListener("mouseleave", () => {
 
 
 
-//Header Text Animation
-// const headerText = document.querySelector(".header__title");
-// const strText = headerText.textContent;
-// const splitText = strText.split("");
-// headerText.textContent = "";
-
-// for (let i = 0; i < splitText.length; i++) {
-//   headerText.innerHTML += "<span>" + splitText[i] + "</span>";
-// }
-
-// let char = 0;
-// let timer = setInterval(onTick, 50);
-
-// function onTick() {
-//   const span = headerText.querySelectorAll("span")[char];
-//   span.classList.add("fade");
-//   char++
-//   if (char == splitText.length) {
-//     complete();
-//     return;
-//   }
-// }
-
-// function complete() {
-//   clearInterval(timer);
-//   timer = null;
-// }
-
-
-
-
-
-
 
 //Change Important Links Colour depending on Background Colour
 //FOR FIRST WHITE SECTION
