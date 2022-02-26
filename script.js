@@ -362,19 +362,3 @@ circleLinkObserverFour.observe(contactSection);
 
 
 
-
-
-
-
-//Recapthcha
-document.getElementById("contact__submit").addEventListener("click", () => {
-  if (document.getElementById("recapthcha").addEventListener("!click")) {
-    const para = document.createElement("p");
-    const node = document.createTextNode("Please verify you're not a robot");
-    document.getElementById("contact__form").appendChild("para")
-    para.appendChild("node");
-    node.classList.add("warning")
-  } else {
-    continue;
-  }
-})

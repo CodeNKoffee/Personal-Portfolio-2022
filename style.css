@@ -985,11 +985,6 @@ CONTACT SECTION
   width: 50%;
 }
 
-.warning {
-  color: red;
-  font-size: 24px;
-}
-
 /* Form & Socials */
 .contact__methods {
   position: relative;
