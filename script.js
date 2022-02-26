@@ -360,24 +360,3 @@ const circleLinkObserverFour = new IntersectionObserver(circleLinkObserverCallba
 circleLinkObserverFour.observe(contactSection);
 
 
-
-
-<<<<<<< HEAD
-=======
-
-
-
-
-//Recapthcha
-document.getElementById("contact__submit").addEventListener("click", () => {
-  if (document.getElementById("recapthcha").addEventListener("!click")) {
-    const para = document.createElement("p");
-    const node = document.createTextNode("Please verify you're not a robot");
-    document.getElementById("contact__form").appendChild("para")
-    para.appendChild("node");
-    node.classList.add("warning")
-  } else {
-    continue;
-  }
-})
->>>>>>> 29670fb98042d8b79931f92add986c38e72e0481
