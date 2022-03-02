@@ -1281,7 +1281,7 @@ body {
 /* Small Phones */
 @media (max-width: 480px) {
   #progress__bar {
-    margin-right: 80%;
+    display: none;
   }
   
   .imp__link--list {
