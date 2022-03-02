@@ -685,6 +685,7 @@ ABOUT SECTION
   display: flex;
   justify-content: center;
   position: relative;
+  z-index: 50;
 }
 
 .language__img--wrapper {
