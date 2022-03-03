@@ -37,6 +37,18 @@ portfolioModal.addEventListener("mouseleave", () => {
 
 
 
+//Header Image
+document.getElementById("header__img").addEventListener("click", () => {
+  document.getElementById("contact-section").scrollIntoView({behavior: 'smooth'});
+})
+
+
+
+
+
+
+
+
 //Change Important Links Colour depending on Background Colour
 //FOR FIRST WHITE SECTION
 //First Link
