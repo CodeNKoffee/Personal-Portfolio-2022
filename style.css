@@ -1300,6 +1300,10 @@ body {
     display: block;
   }
 
+  .portfolio__modal--sub-title--mobile {
+    text-align: center;
+  }
+
   #personal-logo-sm {
     display: block;
   }
