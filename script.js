@@ -372,3 +372,5 @@ const circleLinkObserverFour = new IntersectionObserver(circleLinkObserverCallba
 circleLinkObserverFour.observe(contactSection);
 
 
+
+
