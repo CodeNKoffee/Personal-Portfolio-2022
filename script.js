@@ -374,3 +374,34 @@ circleLinkObserverFour.observe(contactSection);
 
 
 
+
+
+
+
+//Random Quote Generator
+const quotes = [
+  {
+    quote: '“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”',
+    quoter: '- Martin Fowler'
+  },
+
+  {
+    quote: '“First, solve the problem. Then, write the code.”',
+    quoter: '- John Johnson'
+  },
+
+  {
+    quote: '“Experience is the name everyone gives to their mistakes.”',
+    quoter: '- Oscar Wilde'
+  },
+
+  {
+    quote: '“In order to be irreplaceable, one must always be different”',
+    quoter: '- Coco chanel'
+  },
+
+  {
+    quote: '“Java is to JavaScript what car is to Carpet.”',
+    quoter: '- Chris Heilmann'
+  }
+]
