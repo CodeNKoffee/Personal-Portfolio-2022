@@ -464,5 +464,5 @@ const quotes = [
 
 //Quote Button
 const quoteButton = document.getElementById("quotes__btn").addEventListener("click", () => {
-  console.log(quotes[Math.floor(Math.random() * quotes.length)]);
-})
+  console.table(quotes[Math.floor(Math.random() * quotes.length)]);
+});
