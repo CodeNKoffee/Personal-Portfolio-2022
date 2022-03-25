@@ -403,5 +403,66 @@ const quotes = [
   {
     quote: '“Java is to JavaScript what car is to Carpet.”',
     quoter: '- Chris Heilmann'
+  },
+
+  {
+    quote: '“Knowledge is power.”',
+    quoter: '- Francis Bacon'
+  },
+
+  {
+    quote: '“Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.”',
+    quoter: '- Dan Salomon'
+  },
+
+  {
+    quote: '“Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.”',
+    quoter: 'Antoine de Saint-Exupery'
+  },
+
+  {
+    quote: '“Ruby is rubbish! PHP is phpantastic!”',
+    quoter: '- Nikita Popov'
+  },
+
+  {
+    quote: 'Code is like humor. When you have to explain it, it’s bad.”',
+    quoter: 'Cory House'
+  },
+
+  {
+    quote: '“Fix the cause, not the symptom.”',
+    quoter: '- Steve Maguire'
+  },
+
+  {
+    quote: '“Optimism is an occupational hazard of programming: feedback is the treatment.',
+    quoter: '- Kent Beck'
+  },
+
+  {
+    quote: '“When to use iterative development? You should use iterative development only on projects that you want to succeed.”',
+    quoter: '- Martin Fowler'
+  },
+
+  {
+    quote: '"Simplicty is the soul of efficiency"',
+    quoter: '- Austin Freeman'
+  },
+
+  {
+    quote: '"Before software can be reusable, it first has to be usable."',
+    quoter: '- Ralph Johnson'
+  },
+
+  {
+    quote: '"Make it work, make it right, make it fast."',
+    quoter: '- Kent Beck'
   }
 ]
+
+
+//Quote Button
+const quoteButton = document.getElementById("quotes__btn").addEventListener("click", () => {
+  console.log(quotes[Math.floor(Math.random() * quotes.length)]);
+})
