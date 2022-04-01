@@ -1384,6 +1384,10 @@ body {
     text-align: center;
   }
 
+  .quotes__btn {
+    width: 70%;
+  }
+
   .contact__methods {
     display: flex;
     flex-direction: column-reverse;
