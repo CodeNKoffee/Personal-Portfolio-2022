@@ -416,8 +416,6 @@ const quotes = [
 
 //Quote Button
 const quoteButton = document.getElementById("quotes__btn").addEventListener("click", () => {
-  console.table(quotes[Math.floor(Math.random() * quotes.length)]);
-
   //Get a random index
   randomIndex = Math.floor(Math.random() * quotes.length);
 
