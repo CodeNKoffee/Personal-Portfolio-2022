@@ -737,14 +737,14 @@ ABOUT SECTION
   font-weight: 600;
   color: var(--celestial-black);
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
   width: 70%;
 }
 
-.quotes__src {
+/* .quotes__src {
   font-size: 24px;
   margin-bottom: 64px;
-}
+} */
 
 .quotes__btn {
   font-size: 24px;
