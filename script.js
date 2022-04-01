@@ -380,89 +380,50 @@ circleLinkObserverFour.observe(contactSection);
 
 //Random Quote Generator
 const quotes = [
-  {
-    quote: '“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”',
-    quoter: '- Martin Fowler'
-  },
+  '“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”',
 
-  {
-    quote: '“First, solve the problem. Then, write the code.”',
-    quoter: '- John Johnson'
-  },
+  '“First, solve the problem. Then, write the code.”',
 
-  {
-    quote: '“Experience is the name everyone gives to their mistakes.”',
-    quoter: '- Oscar Wilde'
-  },
+  '“Experience is the name everyone gives to their mistakes.”',
 
-  {
-    quote: '“In order to be irreplaceable, one must always be different”',
-    quoter: '- Coco chanel'
-  },
+  '“In order to be irreplaceable, one must always be different”',
 
-  {
-    quote: '“Java is to JavaScript what car is to Carpet.”',
-    quoter: '- Chris Heilmann'
-  },
+  '“Java is to JavaScript what car is to Carpet.”',
 
-  {
-    quote: '“Knowledge is power.”',
-    quoter: '- Francis Bacon'
-  },
+  '“Knowledge is power.”',
 
-  {
-    quote: '“Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.”',
-    quoter: '- Dan Salomon'
-  },
+  '“Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.”',
 
-  {
-    quote: '“Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.”',
-    quoter: 'Antoine de Saint-Exupery'
-  },
+  '“Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.”',
 
-  {
-    quote: '“Ruby is rubbish! PHP is phpantastic!”',
-    quoter: '- Nikita Popov'
-  },
+  '“Ruby is rubbish! PHP is phpantastic!”',
 
-  {
-    quote: 'Code is like humor. When you have to explain it, it’s bad.”',
-    quoter: 'Cory House'
-  },
+  'Code is like humor. When you have to explain it, it’s bad.”',
 
-  {
-    quote: '“Fix the cause, not the symptom.”',
-    quoter: '- Steve Maguire'
-  },
+  '“Fix the cause, not the symptom.”',
 
-  {
-    quote: '“Optimism is an occupational hazard of programming: feedback is the treatment.',
-    quoter: '- Kent Beck'
-  },
+  '“Optimism is an occupational hazard of programming: feedback is the treatment.',
 
-  {
-    quote: '“When to use iterative development? You should use iterative development only on projects that you want to succeed.”',
-    quoter: '- Martin Fowler'
-  },
+  '“When to use iterative development? You should use iterative development only on projects that you want to succeed.”',
 
-  {
-    quote: '"Simplicty is the soul of efficiency"',
-    quoter: '- Austin Freeman'
-  },
+  '"Simplicty is the soul of efficiency"',
 
-  {
-    quote: '"Before software can be reusable, it first has to be usable."',
-    quoter: '- Ralph Johnson'
-  },
+  '"Before software can be reusable, it first has to be usable."',
 
-  {
-    quote: '"Make it work, make it right, make it fast."',
-    quoter: '- Kent Beck'
-  }
+  '"Make it work, make it right, make it fast."'
 ]
 
 
 //Quote Button
 const quoteButton = document.getElementById("quotes__btn").addEventListener("click", () => {
   console.table(quotes[Math.floor(Math.random() * quotes.length)]);
+
+  //Get a random index
+  randomIndex = Math.floor(Math.random() * quotes.length);
+
+  //Get quote at random index
+  selectedQuote = quotes[randomIndex];
+
+  //Display quote
+  document.getElementById("quotes__para").innerHTML = selectedQuote;
 });
