@@ -410,7 +410,9 @@ const quotes = [
 
   '"Before software can be reusable, it first has to be usable."',
 
-  '"Make it work, make it right, make it fast."'
+  '"Make it work, make it right, make it fast."',
+
+  '"There are only two kinds of languages: the ones people complain about and the ones nobody uses."'
 ]
 
 
