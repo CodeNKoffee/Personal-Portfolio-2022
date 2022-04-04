@@ -513,6 +513,7 @@ header {
   margin-bottom: 48px;
   transition: all 300ms ease;
   animation: animate-header-title 800ms 200ms backwards;
+  animation: strokey 1800ms infinite ease-in-out;
 }
 
 @keyframes animate-header-title {
@@ -524,6 +525,18 @@ header {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes strokey {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
