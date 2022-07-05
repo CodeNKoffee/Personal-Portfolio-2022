@@ -1444,7 +1444,7 @@ body {
     margin-left: calc(50% - 125px);
   }
 
-  .honeycomb_Hidden:nth-child(3n + 5) {
+  .honeycomb_hidden:nth-child(3n + 5) {
     display: block;
   }
 }
@@ -1459,8 +1459,8 @@ body {
     margin-right: calc(50% - 275px);
   }
 
-  .honeycomb_Hidden:nth-child(5n), 
-  .honeycomb_Hidden:nth-child(5n + 3) {
+  .honeycomb_hidden:nth-child(5n), 
+  .honeycomb_hidden:nth-child(5n + 3) {
     display: block;
   }
 }
@@ -1468,12 +1468,12 @@ body {
 
 @media (min-width: 1100px) {
   .honeycomb-cell:nth-child(7n + 5) {
-    margin-left: calc(50% - 400px);
+    margin-left: calc(50% - 490px);
   }
 
   .honeycomb-cell:nth-child(7n + 7), 
   .honeycomb-cell:nth-child(7n + 5):nth-last-child(2) {
-    margin-right: calc(50% - 400px);
+    margin-right: calc(50% - 490px);
   }
 
   .honeycomb_Hidden:nth-child(7n + 7), 
