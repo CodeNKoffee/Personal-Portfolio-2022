@@ -1430,7 +1430,7 @@ body {
 }
 
 
-/* Honey Comb Frid Layout Responsiveness */
+/* Honey Comb Grid Layout Responsiveness */
 @media (max-width: 550px) {
   .honeycomb-cell {
     margin: 81.25px 25px;
@@ -1450,7 +1450,7 @@ body {
 }
 
 
-@media (min-width: 825px) and (max-width: 1100px) {
+@media (min-width: 825px) and (max-width: 1600px) {
   .honeycomb-cell:nth-child(5n + 4) {
     margin-left: calc(50% - 275px);
   }
