@@ -921,6 +921,10 @@ PROJECTS
   left: 4%;
 }
 
+.project__description--sixth {
+  left: 5%;
+}
+
 .last__child {
   top: -20%;
 }
