@@ -425,7 +425,9 @@ const quotes = [
 
   '"There are only two kinds of languages: the ones people complain about and the ones nobody uses."',
   
-  '"Any application that can be written in JavaScript, will eventually be written in JavaScript."'
+  '"Any application that can be written in JavaScript, will eventually be written in JavaScript."',
+  
+  '"C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off."'
 ]
 
 
