@@ -423,7 +423,9 @@ const quotes = [
 
   '"Make it work, make it right, make it fast."',
 
-  '"There are only two kinds of languages: the ones people complain about and the ones nobody uses."'
+  '"There are only two kinds of languages: the ones people complain about and the ones nobody uses."',
+  
+  '"Any application that can be written in JavaScript, will eventually be written in JavaScript."'
 ]
 
 
