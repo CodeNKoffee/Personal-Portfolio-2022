@@ -442,3 +442,29 @@ const quoteButton = document.getElementById("quotes__btn").addEventListener("cli
   //Display quote
   document.getElementById("quotes__para").innerHTML = selectedQuote;
 });
+
+
+
+
+
+
+
+age = document.getElementById("age")
+
+const birthYear = 2003;
+const date = new Date()
+let currentDay = date.getDate();
+let currentMonth = date.getMonth() + 1;
+let currentYear = date.getFullYear();
+
+let i = 0;
+let flag = false
+
+while (i < 20 && flag == false) { 
+  if (currentDay == 13 && currentMonth == 11) {
+    let currentAge = currentYear - birthYear
+    age.innerHTML = currentAge;
+    flag = true
+    i++
+  }
+}
