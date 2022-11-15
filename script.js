@@ -448,23 +448,15 @@ const quoteButton = document.getElementById("quotes__btn").addEventListener("cli
 
 
 
-// *********** UNDER TESTING *********** //
 age = document.getElementById("age")
 
 const birthYear = 2003;
-const date = new Date()
+const date = new Date();
 let currentDay = date.getDate();
 let currentMonth = date.getMonth() + 1;
 let currentYear = date.getFullYear();
+let currentAge;
 
-let i = 0;
-let flag = false
+currentMonth >= 11 && currentDay >= 13 ? currentAge = currentYear - birthYear : currentAge = currentYear - birthYear - 1;
 
-while (i < 20 && flag == false) { 
-  if (currentDay == 13 && currentMonth == 11) {
-    let currentAge = currentYear - birthYear
-    age.innerHTML = currentAge;
-    flag = true
-    i++
-  }
-}
+age.innerHTML = currentAge;
