@@ -378,9 +378,9 @@ circleLinkObserverFour.observe(contactSection);
 
 
 
-function alarm() {
-  alert("This project is currently under development, please try again later.");
-}
+// function alarm() {
+//   alert("This project is currently under development, please try again later.");
+// }
 
 
 
@@ -460,3 +460,53 @@ let newAge;
 currentMonth >= 11 && currentDay >= 13 ? newAge = currentYear - birthYear : newAge = currentYear - birthYear - 1;
 
 age.innerHTML = newAge;
+
+
+
+
+
+
+
+const alertModal = document.getElementById("alert__modal");
+const closeButton = document.getElementById("close__btn");
+const retryButton = document.getElementById("retry__btn");
+
+alertModal.style.display = "none";
+
+
+function disableScroll() {
+  // Get the current page scroll position
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+  // if any scroll is attempted, set this to the previous value
+  window.onscroll = function() {
+      window.scrollTo(scrollLeft, scrollTop);
+  };
+}
+
+
+function enableScroll() {
+  window.onscroll = function() {};
+}
+
+
+function alarm(obj) {
+  redirectLink = obj.getAttribute("href");
+  alertModal.style.display = "block";
+
+  disableScroll();
+
+  closeButton.addEventListener("click", () => {
+    alertModal.style.display = "none";
+
+    enableScroll();
+  });
+
+  retryButton.addEventListener("click", () => {
+    window.location.href = redirectLink;
+    alertModal.style.display = "none";
+
+    enableScroll();
+  })
+}

@@ -294,6 +294,18 @@
     <div class="container">
       <div class="row">
         <h2 class="projects__title">Here are some of my <span class="blue">projects</span></h2>
+        <div id="alert__modal" class="alert__modal">
+          <h1 class="alert__modal--title">OOPS!</h1>
+          <p class="alert__modal--para">The project you're trying to access is currently under development. <span class="blue">Please try again later or contact <a class="support" href="mailto:hatemthedev@gmail.com">hatemthedev@gmail.com</a></span></p>
+          <ul class="alert__modal--btns">
+            <li class="alert__modal--btn--wrapper">
+              <button id="close__btn" class="alert__modal--btn">close</button>
+            </li>
+            <li class="alert__modal--btn--wrapper">
+              <a href="" id="retry__btn" class="alert__modal--btn alert__modal--btn--special">try again</a>
+            </li>
+          </ul>
+        </div>
         <ul class="honeycomb">
           <li class="honeycomb-cell">
             <img class="honeycomb-cell_img" src="./Assets/ProjectOneJPG-min.jpg">
@@ -384,7 +396,7 @@
                 <a href="https://github.com/CodeNKoffee/Client-Portfolio" target="_blank" class="project__description--link">
                   <i class="fab fa-github"></i>
                 </a>
-                <a href="#projects-section" class="project__description--link" onclick="alarm()">
+                <a href="#projects-section" class="project__description--link" onclick="alarm(this)">
                   <i class="fas fa-link"></i>
                 </a>
               </div>
@@ -422,7 +434,7 @@
                 <a class="project__description--link">
                   <i class="fab fa-github"></i>
                 </a>
-                <a class="project__description--link" onclick="alarm()">
+                <a href="#projects-section" class="project__description--link" onclick="alarm(this)">
                   <i class="fas fa-link"></i>
                 </a>
               </div>

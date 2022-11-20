@@ -3,6 +3,7 @@
 :root {
   --celestial-black: #1d1d1d;
   --northguard-blue: #27bbc1;
+  --sebastian-blue: #5ee5e9; 
   --wintertusk-white: #fff;
   --avalon-grey: #d7d7d7;
   --oath-grey: #9c9c9c;
@@ -777,6 +778,83 @@ PROJECTS
   color: var(--wintertusk-white);
   text-align: center;
   margin-top: 48px;
+}
+
+.alert__modal {
+  position: absolute;
+  left: 17%;
+  top: 60%;
+  background-color: var(--wintertusk-white);
+  color: var(--celestial-black);
+  border-radius: 16px;
+  z-index: 1;
+  padding: 32px 64px;
+  width: 65%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert__modal--title {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--northguard-blue);
+  margin-bottom: 40px;
+}
+
+.alert__modal--para {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.alert__modal--btns {
+  margin: 24px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.alert__modal--btn--wrapper {
+  width: 30%; 
+}
+
+.alert__modal--btn {
+  font-size: 24px;
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--celestial-black);
+  border: 4px solid var(--northguard-blue);
+  border-radius: 50px;
+  padding: 8px 24px;
+  width: 180px !important;
+  transition: all 300ms ease;
+}
+
+.alert__modal--btn--special {
+  background-color: var(--northguard-blue);
+  padding: 8px 40px;
+}
+
+.alert__modal--btn:hover {
+  border-color:var(--sebastian-blue);
+}
+
+.alert__modal--btn--special:hover {
+  background-color: var(--sebastian-blue);
+}
+
+.support {
+  text-decoration: underline;
+  color: var(--northguard-blue);
+  transition: all 100ms ease;
+}
+
+.support:hover {
+  color: var(--sebastian-blue);
 }
 
 .honeycomb {
