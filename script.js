@@ -510,3 +510,13 @@ function alarm(obj) {
     enableScroll();
   })
 }
+
+
+
+
+
+
+
+// let copyrightYear = document.getElementById("copyright__year");
+
+// copyrightYear.innerHTML = currentYear;
