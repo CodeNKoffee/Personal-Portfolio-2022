@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script defer src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.0/dist/kute.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
   <title>Hatem Soliman | Redefining the Web Experience</title>
@@ -669,12 +670,31 @@
               <img src="./assets/agreement.svg" alt="Agreement" id="contact__img--agreement">
             </figure>
           </div>
-          <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+          <svg 
+            id="visual" 
+            viewBox="0 0 900 600" 
+            width="900" 
+            height="600" 
+            xmlns="http://www.w3.org/2000/svg" 
+            xmlns:xlink="http://www.w3.org/1999/xlink" 
+            version="1.1"
+          >
             <g transform="translate(419.5919098635898 346.4461440853622)">
-              <path id="blob-1" d="M4.6 -57.8C9.2 -5.3 18.5 -10.7 81 -10.7C143.5 -10.7 259.2 -5.3 291 18.3C322.7 42 270.5 84 222.9 109.8C175.3 135.7 132.4 145.3 96 137.2C59.7 129 29.8 103 -7.2 115.4C-44.2 127.8 -88.3 178.7 -137.8 194.4C-187.3 210.2 -242.2 190.8 -239.8 152.6C-237.4 114.3 -177.7 57.2 -155.3 12.9C-132.9 -31.3 -147.9 -62.7 -154.5 -108.3C-161.2 -153.9 -159.6 -213.8 -132.5 -253.3C-105.3 -292.8 -52.7 -311.9 -26.3 -266.3C0 -220.7 0 -110.3 4.6 -57.8" fill="#27bbc1"></path>
+              <path 
+                id="blob-1" 
+                d="M4.6 -57.8C9.2 -5.3 18.5 -10.7 81 -10.7C143.5 -10.7 259.2 -5.3 291 18.3C322.7 42 270.5 84 222.9 109.8C175.3 135.7 132.4 145.3 96 137.2C59.7 129 29.8 103 -7.2 115.4C-44.2 127.8 -88.3 178.7 -137.8 194.4C-187.3 210.2 -242.2 190.8 -239.8 152.6C-237.4 114.3 -177.7 57.2 -155.3 12.9C-132.9 -31.3 -147.9 -62.7 -154.5 -108.3C-161.2 -153.9 -159.6 -213.8 -132.5 -253.3C-105.3 -292.8 -52.7 -311.9 -26.3 -266.3C0 -220.7 0 -110.3 4.6 -57.8" 
+                fill="#27bbc1"
+              ></path>
             </g>
-            <g class="blobs" transform="translate(500.2373891646196 256.03556354588545)">
-              <path id="blob-2" d="M67.4 -98.5C107.1 -93.8 172.6 -115.6 187.4 -103.6C202.1 -91.7 166.1 -45.8 161.4 -2.7C156.8 40.5 183.6 81 193.2 135.1C202.8 189.3 195.1 257 160.1 262.4C125 267.8 62.5 210.9 3.3 205.3C-56 199.7 -112 245.3 -112 219.7C-112 194 -56 97 -89 48.5C-122 0 -244 0 -282.7 -22.3C-321.4 -44.7 -276.7 -89.3 -233.5 -120.1C-190.2 -150.8 -148.4 -167.6 -109.7 -173C-71 -178.3 -35.5 -172.2 -10.8 -153.4C13.8 -134.6 27.7 -103.3 67.4 -98.5" fill="#27bbc1"></path>
+            <g 
+              class="blobs" 
+              transform="translate(500.2373891646196 256.03556354588545)"
+            >
+              <path 
+                id="blob-2" 
+                d="M67.4 -98.5C107.1 -93.8 172.6 -115.6 187.4 -103.6C202.1 -91.7 166.1 -45.8 161.4 -2.7C156.8 40.5 183.6 81 193.2 135.1C202.8 189.3 195.1 257 160.1 262.4C125 267.8 62.5 210.9 3.3 205.3C-56 199.7 -112 245.3 -112 219.7C-112 194 -56 97 -89 48.5C-122 0 -244 0 -282.7 -22.3C-321.4 -44.7 -276.7 -89.3 -233.5 -120.1C-190.2 -150.8 -148.4 -167.6 -109.7 -173C-71 -178.3 -35.5 -172.2 -10.8 -153.4C13.8 -134.6 27.7 -103.3 67.4 -98.5" 
+                fill="#27bbc1"
+              ></path>
             </g>
           </svg>
         </div>
@@ -682,11 +702,17 @@
     </div>
 
     <script>
-      const tween = KUTE.fromTo(
-        '#blob-1',
-        { path: '#blob-1' },
-        { path: '#blob-2' },
-        { repeat: 999, duration: 3000, yoyo: true }
+      const tween = KUTE.fromTo('#blob-1', { 
+          path: '#blob-1' 
+        }, 
+        {
+          path: '#blob-2' 
+        },
+        { 
+          repeat: 1000, 
+          duration: 3000, 
+          yoyo: true 
+        }
       )
 
       tween.start()
@@ -713,7 +739,7 @@
   </div>
   </footer>
   
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
   <script src="particles.js"></script>
 </body>
 </html>

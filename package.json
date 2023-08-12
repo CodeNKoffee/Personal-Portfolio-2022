@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "kute.js": "^2.2.4",
     "particlesjs": "^2.2.3"
   }
 }
