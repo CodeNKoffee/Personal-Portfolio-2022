@@ -520,3 +520,5 @@ function alarm(obj) {
 // let copyrightYear = document.getElementById("copyright__year");
 
 // copyrightYear.innerHTML = currentYear;
+
+

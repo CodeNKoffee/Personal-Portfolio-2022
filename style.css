@@ -760,6 +760,57 @@ ABOUT SECTION
   color: var(--northguard-blue);
 }
 
+/* COMING SOON... */
+.coming__soon {
+  background: radial-gradient(circle, var(--celestial-black), var(--celestial-black), transparent);
+  border-radius: 72px;
+  padding: 64px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 8s infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes pulse {
+  0% {
+    background-size: 100% 100%;
+  }
+  25% {
+    background-size: 0% 0%;
+  }
+  50% {
+    background-size: 120% 140%;
+  }
+  75% {
+    background-size: 190% 160%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+
+.coming__soon--title {
+  font-size: 72px;
+  margin-bottom: 72px;
+  color: var(--wintertusk-white);
+  text-align: center;
+}
+
+.coming__soon--img--wrapper {
+  width: 75%;
+}
+
+.coming__soon--img {
+  width: 100%;
+}
+
+/* Interactivity */
+#light-1:hover {
+  fill: #FF0;
+}
+
 
 /*
 
