@@ -764,6 +764,8 @@ ABOUT SECTION
 .coming__soon {
   background: radial-gradient(circle, var(--celestial-black), var(--celestial-black), transparent);
   border-radius: 72px;
+  width: 75%;
+  margin: 0 auto;
   padding: 64px 32px;
   display: flex;
   flex-direction: column;
@@ -796,6 +798,10 @@ ABOUT SECTION
   margin-bottom: 72px;
   color: var(--wintertusk-white);
   text-align: center;
+}
+
+.coming__soon--title::after {
+  content: "...";
 }
 
 .coming__soon--img--wrapper {
@@ -1531,6 +1537,19 @@ body {
 
   .quotes__btn {
     width: 70%;
+  }
+
+  .coming__soon {
+    width: 80%;
+    border-radius: 24px;
+  }
+
+  .coming__soon--title {
+    font-size: 32px;
+  }
+
+  .coming__soon--title::after {
+    content: "";
   }
 
   .contact__methods {
