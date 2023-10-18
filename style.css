@@ -804,6 +804,20 @@ ABOUT SECTION
 
 .coming__soon--img {
   width: 100%;
+  transition: all 300ms ease;
+  animation: strokey-room 2400ms infinite ease-in-out;
+}
+
+@keyframes strokey-room {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-32px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Interactivity */
