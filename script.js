@@ -522,3 +522,20 @@ function alarm(obj) {
 // copyrightYear.innerHTML = currentYear;
 
 
+var questionsList = ["Where is the tallest structure in the world?", "Where are the Pyramids?"];
+var answersKeyList = ["United Arab Emirates", "Egypt"];
+
+for (let i = 0; i < questionsList.length; i++) {
+  console.log(questionsList[i]);
+}
+
+var i = 0;
+do {
+  var userAnswer = prompt(`Enter answer for question ${i + 1}`).toLowerCase();
+  if (userAnswer === answersKeyList[i].toLowerCase()) {
+    console.log(`Success for question ${i + 1}`);
+  } else {
+    console.log(`Incorrect for question ${i + 1}. The correct answer is: ${answersKeyList[i]}`);
+  }
+  i++; // Increment i to move to the next question
+} while (i < questionsList.length);
