@@ -1380,6 +1380,24 @@ footer {
 RESPONSIVENESS
 
 */
+/* Mind-width */
+@media(min-width: 1400px) {
+  .honeycomb {
+    -webkit-box-pack: center;
+    margin: 64px auto;
+    padding: 224px;
+    padding-bottom: 224px;
+    padding-top: 224px;
+    transform: translateY(80px);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* 4K Displays */
 @media(max-width: 2160px) {
   #home-section {
