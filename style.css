@@ -1381,7 +1381,7 @@ RESPONSIVENESS
 
 */
 /* Mind-width */
-@media(min-width: 1400px) {
+/* @media(min-width: 1400px) {
   .honeycomb {
     -webkit-box-pack: center;
     margin: 64px auto;
@@ -1396,7 +1396,7 @@ RESPONSIVENESS
     justify-content: center;
     align-items: center;
   }
-}
+} */
 
 /* 4K Displays */
 @media(max-width: 2160px) {
